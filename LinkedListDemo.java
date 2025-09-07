@@ -1,4 +1,4 @@
-// LinkedListDemo.java
+
 
 class Node {
     int data;
@@ -13,14 +13,14 @@ class Node {
 class LinkedList {
     Node head;
 
-    // Insert at beginning
+  
     void insertAtBeginning(int data) {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
     }
 
-    // Insert at end
+
     void insertAtEnd(int data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -34,7 +34,7 @@ class LinkedList {
         temp.next = newNode;
     }
 
-    // Insert at a given position (1-based index)
+
     void insertAtPosition(int data, int position) {
         if (position <= 0) {
             System.out.println("Invalid position!");
@@ -57,7 +57,7 @@ class LinkedList {
         temp.next = newNode;
     }
 
-    // Print linked list
+
     void printList() {
         Node temp = head;
         while (temp != null) {
@@ -81,3 +81,4 @@ public class LinkedListDemo {
         list.printList();
     }
 }
+
